@@ -20,8 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "eslint": "npx eslint src",
-    "prettier": "npx prettier --write src"
+    "eslint:fix": "npx eslint --fix src",
+    "eslint": "npx eslint src"
   },
   "eslintConfig": {
     "extends": [
@@ -30,7 +30,10 @@
     ]
   },
   "lint-staged": {
-    "src": ["eslint", "prettier"]
+    "*.{js,jsx,ts,tsx,md,html,css}": [
+      "npx eslint",
+      "npx prettier --write"
+    ]
   },
   "browserslist": {
     "production": [
@@ -45,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.25.0",
+    "eslint": "8.22.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.31.10"
   }
