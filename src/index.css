@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background-color-day-black: #000;
+  --background-color-middle: #8055ff;
+  --background-color-day-white: #fff;
+  --background-color-day-light-blue: #bad8f5;
+  --background-color-day-blue: #459df5;
+  --background-color-day-red: #f53152;
+  --background-color-day-blue-white: #ebf0f5;
+  --background-color-day-dark-white: rgb(235 240 245 / 100%);
+  --background-color-day-orange: rgb(255 140 86 / 100%);
+  --background-color-day-green: #0fb864;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
 }
