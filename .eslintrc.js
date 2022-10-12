@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react", "html"],
   rules: {
     "require-jsdoc": 0,
   },
